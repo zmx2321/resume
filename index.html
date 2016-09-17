@@ -8,8 +8,9 @@
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
 <title>web前端工程师简历</title>
+<script type="text/javascript">
+</script>
 </head>
 <body>
 <div class="all">
@@ -93,6 +94,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 <script>
+//改变文本提示
 $(function(){
 	$("header dd ul").hover(
 		function(){
@@ -105,6 +107,19 @@ $(function(){
 		}
 	);
 });
+
+window.onload = function(){
+//判断设备
+	var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+	var browser = navigator.userAgent.toLowerCase();
+	var isMobile = false;for (var i=0; i<mobileAgent.length; i++){
+		if (browser.indexOf(mobileAgent[i])!=-1){ 
+			isMobile = true;
+			/*alert(mobileAgent[i]);*/
+			location.href = 'about:blank';break; 
+		} 
+	}
+}
 </script>
 <!-- js e -->
 </body>
