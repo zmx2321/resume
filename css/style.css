@@ -187,5 +187,6 @@ article{
 	nav li{display:inline-block;width:24%;}
 	nav li a{padding-left:15px;}
 	.nav_on{background:initial !important;padding:0 !important;}
+	nav li:hover{background:initial;padding-left:initial;}
 }
 /***==== media screen s ====*/
