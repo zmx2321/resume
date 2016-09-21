@@ -158,6 +158,14 @@ article{
     margin: 20px auto;
     min-height: 300px;
 }
+
+article section{
+	display: none;
+}
+
+article section:first-child{
+	display: block;
+}
 /*==== article e ====*/
 /*======= container s =======*/
 
