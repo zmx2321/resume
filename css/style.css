@@ -183,10 +183,10 @@ article{
 	.aside{width:100%;min-height:51px;}
 	.header{height:65px;}
 	header{height:65px;line-height:65px;}
-	nav ul{margin-top:0;}
+	nav ul{margin:5px 0;}
 	nav li{display:inline-block;width:24%;}
+	nav li:hover{background:initial;padding-left:initial;}
 	nav li a{padding-left:15px;}
 	.nav_on{background:initial !important;padding:0 !important;}
-	nav li:hover{background:initial;padding-left:initial;}
 }
 /***==== media screen s ====*/
