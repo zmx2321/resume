@@ -1,5 +1,71 @@
-/* layout css s */
-body{
-	background: #f90;
+/*==== layout css s ====*/
+@font-face {
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/pacifico.woff") format('woff');
 }
-/* layout css e */
+
+html, body {
+	margin: 0; 
+	padding: 0;
+}
+
+::selection {
+	background-color: #35405f;
+	color: #fff;
+}
+
+*, *:active, *:focus, *:hover {
+	outline: none;
+}
+
+h1, h2, h3, h4, h5,h6 {
+	margin-top: 0;
+}
+
+body {
+	font: 15px/23px "Lucida Sans","Liberation Sans","Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	background-color: rgb(224, 247, 246);
+
+}
+
+.btn {
+	transition: 0.4s background linear;
+}
+
+.btn:focus
+{
+	color: #fff;
+}
+
+@font-face
+{
+font-family: myFirstFont;
+src: url('fonts/pacifico.woff')
+}
+
+.aaa
+{
+font-family:myFirstFont;
+}
+/*==== layout css e ====*/
+
+
+/*==== media screen s ====*/
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+/***==== media screen s ====*/
