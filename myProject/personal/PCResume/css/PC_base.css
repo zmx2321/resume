@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+/************************* layout css begin **************************/
+body{
+    overflow: hidden;
+}
+
+a{
+	color:#949494;	
+}
+
+a:hover{
+	transition:0.3s linear;
+	color:#f00;
+}
+
+/** Google css begin **/
+::-webkit-scrollbar {   
+   width: 0.5em; 
+}  
+  
+::-webkit-scrollbar:horizontal{  
+	height: 0.5em;  
+}/*横向滚动条样式*/  
+  
+/* Track */  
+::-webkit-scrollbar-track {  
+	/*-webkit-box-shadow: inset 0 0 6px rgba(250,250,250,0.3);   */
+	-webkit-border-radius: 10px;  
+	border-radius: 10px;  
+}  
+  
+/* Handle */  
+::-webkit-scrollbar-thumb {  
+	-webkit-border-radius: 10px;  
+    border-radius: 10px;  
+	  background: rgba(250, 249, 249, 0.5);
+  	-webkit-box-shadow: inset 0 0 6px rgba(11, 8, 8, 0.5);
+}  
+  
+::-webkit-scrollbar-thumb:window-inactive {    
+	background: rgba(250,250,250,0.6);   
+}  
+/*** Google css end ***/
+
+/** writeln css begin **/
+.writeln_style{
+	color: #480DAE;
+	position: absolute;
+	z-index: 1;
+	font-weight:bold;
+}
+/*** writeln end ***/
+/************************** layout css end ***************************/
+
+
+
+
+
+
+
+
+
+
+
+

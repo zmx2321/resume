@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************** test css begin ************************************/
+
+/******************************** test css end ************************************/
+
+/******************************** main_href css begin ************************************/
+.main_href{
+	position:absolute;
+    width: 100vw;
+    height: 100vh;
+	background:url(../images/d_bg.png) no-repeat top;	
+	background-size: 115% 100%;
+    background-position: 0 0;
+}
+
+.main_href .wz_wrap{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    margin: 33% auto;
+	margin-bottom: 0;
+    transform: rotate(-45deg);
+    opacity: 0.3;
+}
+
+.wz {
+    position: absolute;
+    height: 35%;
+    width: 60%;
+    top: 24%;
+    left: 21%;
+	overflow:auto;
+	/*border:solid 1px #ccc;*/
+}
+
+.wz textarea{
+	color:#333;
+	font-size:13px;
+	padding:10px;
+	text-indent:2em;	
+	line-height:22px;
+	background:#fff;
+	opacity:0.8;
+	width: 87%;
+    height: 87%;
+    border-radius: 10px;
+}
+
+.main_href .tz_wrap{
+	width: 50%;
+    height: 8%;
+    animation: welcome 1s infinite;
+    background: #fff;
+    margin: 20% auto;	
+	opacity: .6;
+	border-radius: 12px;
+    background-color: #98C2C3;
+}
+
+.tz_wrap li {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.tz_wrap li a{
+	display:block;
+	width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;	
+	background:#98C2C3;
+	color:#fff;
+	font-size:14px;
+	border-radius: 10px;
+}
+
+@keyframes welcome{
+    0% {
+        transform: translateY(-3px);
+        opacity: .6;
+    }
+
+    50% {
+        transform: translateY(5px);
+        opacity: .8;
+    }
+
+    to {
+        transform: translateY(-3px);
+		opacity: .6;
+    }	
+}
+/******************************** main_href css end ************************************/
+
+.main_2{
+	display:none;	
+}
+
+@media only screen and (min-width: 320px) and (max-width:568px) {
+
+}
+
+@media only screen and (min-width: 375px) and (max-width:667px) {
+
+}
+
+@media only screen and (min-width: 414px) and (max-width:736px) {
+
+}
+
+
+
+/******************************** function css begin ************************************/
+
+/******************************** function css end ************************************/

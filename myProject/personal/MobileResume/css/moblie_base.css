@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+/******************************** layout css begin ************************************/
+body{
+	font-size:1em;	
+    overflow: hidden;
+}
+
+a{
+	color:#949494;	
+}
+
+a:hover{
+	transition:0.3s linear;
+	color:#f00;
+}
+
+.main-wrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 500ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.writeln_style{
+	color: #480DAE;
+	position: absolute;
+	z-index: 1;
+	font-weight:bold;
+}
+/******************************** layout css end ************************************/
+
+/******************************** function css begin ************************************/
+/**************** music toggle css begin ***************/
+.music{
+	position:fixed;	
+	top: 10px;
+	right:10px;
+	z-index: 100;
+	cursor:pointer;
+}
+
+.music img{
+	width:37px;
+	height:37px;
+	outline:none;
+}
+/***************** music toggle css end ****************/
+
+/**************** xxxx ***************/
+/***************** xx ****************/
+/******************************** function css end ************************************/
+

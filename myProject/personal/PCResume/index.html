@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PCResume</title>
+<link rel="Shortcut Icon" href="../public/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="../public/css/public.css">
+<link rel="stylesheet" type="text/css" href="css/PC_base.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/PC_index_screen.css">
+<script src="../public/js/jquery/jquery-1.8.2.min.js"></script>
+<script src="../MobileResume/js/lib/jquery.jplayer.min.js"></script>
+<script src="../public/js/jquery/lib/jquery.typetype.min.js"></script>
+<script src="../public/js/public.js"></script>
+<script src="js/PC_base.js"></script>
+<script src="js/index.js"></script>
+
+</head>
+<body onselectstart="return false">
+<!--[if lte IE 8]>
+<script type="text/javascript" src="http://www.lagou.com/js/assets/excanvas.js?v=1.5.6_2015121213"></script>
+<![endif]-->
+<div class="main-wrap">	
+    <div class="main_content_wrap">
+        <div class="main_content">
+            <div class="header_wrap">
+                <header>
+                	<div class="nav">
+                    	<div class="nav_cont">
+                            <div class="nav_picture">
+                            	<img src="../public/images/favicon.ico" />
+                                <p>Stay hungry,stay foolish.</p>
+                            </div>
+                            <nav>
+                            	<ul>
+                                	<li><a href="javascript:;">前端交流</a>
+                                    	<!--<ul>
+                                        	<li><a href="javascript:;" target="_blank">Javascript</a></li>
+                                            <li><a href="javascript:;" target="_blank">jQuery</a></li>
+                                            <li><a href="javascript:;" target="_blank">css3动画</a></li>
+                                        </ul>-->
+                                    </li>
+									<li><a href="javascript:;">xxx</a>
+                                    	<!--<ul>
+                                        	<li><a href="javascript:;" target="_blank">转载</a></li>
+                                            <li><a href="javascript:;" target="_blank">原创</a></li>
+                                        </ul>-->
+                                    </li>
+                                    <li><a href="javascript:;">大杂烩</a>
+                                    	<!--<ul>
+                                        	<li><a href="javascript:;" target="_blank">Java环境搭建</a></li>
+                                        </ul>-->
+                                    </li>
+                                    <li><a href="php/mfd/php/index.php" target="_blank">散文</a>
+                                    	<!--<ul>
+                                        	<li><a href="javascript:;" target="_blank">jQuery基本库</a></li>
+                                            <li><a href="javascript:;" target="_blank">jQuery插件</a></li>
+                                            <li><a href="javascript:;" target="_blank">jQueryMobile</a></li>
+                                        </ul>-->                                    
+                                    </li>
+                                </ul>
+                            </nav>                
+                        </div>
+                    </div>
+                    <!--<p class="header_yz_p">个人驿站</p>-->
+                </header>
+            </div>
+            <div class="body_cont_wrap">
+            	<div class="body_cont">
+                    <div class="aside_left">
+                        <aside>
+                            <h3>Demos</h3>
+                            <div class="aside_left_cont">
+                                <section>
+                                    <div class="aside_left_box">
+                                        <ul>
+                                            <li> 
+                                                <a href="javascript:;">Canvas</a>
+                                                <ul> 
+                                                    <li><a href="../study/canvas_ty.html" target="_blank">涂鸦</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                </ul> 
+                                            </li> 
+                                            <li> 
+                                                <a href="javascript:;">Css3</a>
+                                                <ul> 
+                                                    <li><a href="../study/css3_mg.html" target="_blank">迷宫</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                </ul> 
+                                            </li> 
+                                            <li> 
+                                                <a href="javascript:;">Show</a>
+                                                <ul> 
+                                                    <li><a href="../study/show_R.html" target="_blank">R</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                    <li><a href="javascript:" target="_blank">xx</a></li>
+                                                </ul> 
+                                            </li> 
+                                            <li> 
+                                                <a href="javascript:;" class="edit_a">edit</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="article">
+                    	<article id="text_cont_view">
+							
+                        </article>
+                    </div>     
+            	</div>           
+            </div>
+        </div>
+    </div>
+    <div id="stars-1"></div>
+    <div id="stars-2"></div>
+    <div id="stars-3"></div>
+    <div id="stars-4"></div>
+    <div id="stars-5"></div>
+
+</div>
+
+<!---------------------- function begin ---------------------->
+<!--返回-->
+<div class="fhref" onclick="location.reload()">返回</div>
+<button class="music_ico conmm">去掉音乐图标</button>
+<!--返回-->
+
+<!--music-->
+<div class="music">
+    <div id="jquery_jplayer_1"></div>
+    <div id="jp_container_1">
+            <li><img href="javascript:;" class="jp-play" tabindex="1" src="images/pc_music_on.png" width="47" height="47"></li>
+            <li><img href="javascript:;" class="jp-pause" tabindex="1" src="images/pc_music_off.png" width="47" height="47"></li>
+        </ul>
+    </div>
+</div>
+<!--music-->
+
+<!--跳转页-->
+<div class="hrtmain_content_wrap">
+    <ul>
+    	<li><button class="play_sb">play</button></li>
+    	<li><button class="change_bg">照片墙</button></li>
+		<li><button class="music_ico">去掉音乐图标</button></li>
+    </ul>
+    <div class="hrtmain_content">
+        <div class="tz_dljs_wrap">
+            <textarea class="tz_dljs" disabled="disabled"></textarea>
+        </div>
+        <div class="hrtmain_href">
+        	<a href="php/login.php" target="_blank"><p class="tz0"></p></a>
+            <p class="tz1_0">进入我的后台</p>
+        	<p class="tz1_1">进入我的个人站</p>
+            <p class="tz1"></p>
+            <p class="tz2"></p>
+            <p class="tz2_2">进入我的个人简历</p>
+        </div>
+    </div>
+</div>
+<div class="bg">
+<div id="bg_screen">
+ <div id="pan">
+  <div class="frame" title="风景111"><img src="images/bg_tpq1.jpg" alt=""></div>
+  <div class="frame" title="风景222"><img src="images/bg_tpq2.jpg" alt=""></div>
+  <div class="frame" title="风景333"><img src="images/bg_tpq3.jpg" alt=""></div>
+  <div class="frame" title="风景444"><img src="images/bg_tpq4.jpg" alt=""></div>
+  <div class="frame" title="风景555"><img src="images/bg_tpq5.jpg" alt=""></div>
+  <div class="frame" title="风景666"><img src="images/bg_tpq6.jpg" alt=""></div>
+  <div class="frame" title="风景777"><img src="images/bg_tpq7.jpg" alt=""></div>
+  <div class="frame" title="风景888"><img src="images/bg_tpq8.jpg" alt=""></div>
+  <div class="frame" title="风景999"><img src="images/bg_tpq9.jpg" alt=""></div>
+ </div>
+</div>
+<script type="text/javascript">
+ /* ==== start script ==== */
+ sP.init();
+ onresize = sP.resize;
+</script>
+</div>
+<!--跳转页-->
+
+<!--鼠标火焰跟随-->
+<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+<!--鼠标火焰跟随-->
+<!----------------------- function end ---------------------->
+
+</body>
+</html>

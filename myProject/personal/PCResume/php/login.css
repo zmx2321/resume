@@ -1,0 +1,102 @@
+/*** layout css begin ***/
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	background: #E3F7F9;
+  	font-family: 微软雅黑;
+	font-size: 12px;
+}
+
+a{
+	text-decoration:none;
+	color:#333;
+}
+
+li{
+	list-style-type:none;
+}
+
+/* function css begin */
+
+/** function css end **/
+/**** layout css end ****/
+
+/* login_in css begin */
+.login_in{
+	width: 28%;
+	margin: 18% auto;
+	height: 155px;
+	border: solid 1px #ccc;
+	border-radius: 10px;
+	padding: 10px;
+	background: rgba(221, 239, 252, 0.35);
+}
+
+.login_in:hover{
+	transition: 0.3s linear;
+	background: rgba(221, 239, 252, 0.75);
+}
+
+.login_in ul {
+	width: 58%;
+	margin: 30px auto;
+}
+
+.login_in ul li {
+ 	margin-top: 15px;
+}
+
+.login_in span{
+	width: 56px;
+	display: block;
+	float: left;
+	height: 22px;
+ 	line-height: 22px;
+}
+
+.input{
+	border: solid 1px #ccc;
+	width: 70%;
+	height: 22px;
+	outline: none;
+	border-radius: 6px;
+	padding-left: 15px;
+}
+
+.input:hover{
+	transition: 0.3s linear;
+	border:solid 1px #D8D221;
+}
+
+.input:focus {
+	border: solid 1px #38DABC;
+}
+
+.denglu_btn{
+	width: 96%;
+	text-align: center;
+}
+
+.denglu_btn input{
+	width: 80px;
+	height: 28px;
+	border: 0;
+	background: #D1E7E8;
+	border-radius: 6px;
+	cursor: pointer;
+	outline: none;
+}
+
+.denglu_btn input:hover{
+	background: #ABABAB;
+ 	transition: 0.3s linear;
+}
+/** login_in css end **/
+
+@media (min-width: 1280px) and (max-width: 1366px){
+	.login_in{margin: 13% auto;}
+	.login_in ul{width: 75%;}
+}

@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (min-width:1360px) and (max-width:1366px){
+	.tz_dljs_wrap{height:175px;margin-top:35px;}
+	.music{width:30px;height:30px;top:60px;right:45px}
+	.music img{width:30px;height:30px;}
+}
+

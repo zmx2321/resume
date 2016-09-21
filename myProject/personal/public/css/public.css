@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+/********** layout css begin **********/
+html {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, 
+h2, h3, h4, h5, h6, pre, code, form, 
+fieldset, legend, input, textarea, 
+p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+	color: #333;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+q:before, q:after {
+    content: "";
+}
+
+li {
+    list-style: none outside none;
+}
+
+.clear{
+	clear: both;	
+}
+/*********** layout css end ***********/
+
+/************************************************** <<<<<<<<<<<<<<< functionPart css begin >>>>>>>>>>>>>> ************************************************/
+
+/*************************************************** <<<<<<<<<<<<<<< functionPart css end >>>>>>>>>>>>>> *************************************************/
+
