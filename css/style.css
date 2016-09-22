@@ -80,13 +80,15 @@ src: url('../fonts/fontawesome-webfont.ttf')
 /*======= header s =======*/
 .header{
 	width: 100%;
-	height: 100px;
+	height: 50px;
+	position:absolute;
+	top:0;
 }
 
 header{
 	width: 100%;
-	height: 100px;
-	line-height: 100px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 }
 
@@ -97,20 +99,19 @@ header h1{
 
 /*======= container s =======*/
 .container{
-	width: 75%;
-	margin: 0 auto;
-	min-height: 300px;
-	-moz-box-shadow: 3px 3px 4px 0px #a3a3a3;
-	-webkit-box-shadow: 3px 3px 4px 0px #a3a3a3;
-	box-shadow: 3px 3px 4px 0px #a3a3a3;
-	border-top: 1px solid #9a9a9a;
+    width: 100%;
+    margin: 50px auto 0;
+    min-height: 500px;
+    -moz-box-shadow: 3px 3px 4px 0px #a3a3a3;
+    -webkit-box-shadow: 3px 3px 4px 0px #a3a3a3;
+    box-shadow: 3px 3px 4px 0px #a3a3a3;
+    border-top: 1px solid #9a9a9a;
     position: relative;
 }
 
 /*==== aside s ====*/
 .aside{
-    width: 30%;
-    min-height: 300px;
+    width: 20%;
     background: url(../images/bg-sidebar.jpg);
     position: absolute;
     right: 0;
@@ -155,18 +156,18 @@ nav li a{
 
 /*==== article s ====*/
 .article{
-    width: 70%;
-    min-height: 300px;
-    background: #E3E3E3;
+    width: 80%;
+    min-height: 500px;
+    /* background: #E3E3E3; */
     float: left;
 }
 
 article{
-    width: 92%;
+    width: 95%;
     z-index: 0;
-    background: #fff;
+    background: #E3E3E3;
     margin: 20px auto;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 article section{
@@ -177,18 +178,13 @@ article section:first-child{
 	display: block;
 }
 
+
+/* main_index_box（首页）s */
+
+/* main_index_box（首页）e */
+
 /* introduce_pson（个人信息）s */
-.introduce{
-    background: rgba(211, 222, 219, 0.37);
-}
 
-.introduce_pson{
-
-}
-
-.introduce_pson ul > li{
-
-}
 /* introduce_pson（个人信息）e */
 
 /* introduce_induc（自我介绍）s */
@@ -214,10 +210,11 @@ article section:first-child{
 }
 
 @media only screen and (max-width:640px) {
-	.container{width:100%;}
-	.article{width:100%;}
+	.container{width:100%;min-height:350px;margin-top:65px;}
+	.article{width:100%;min-height:350px;}
+	article{min-height:350px;}
 	.aside{width:100%;min-height:90px;position:initial;float:right;}
-	.header{height:65px;}
+	.header{ height:65px;}
 	header{height:65px;line-height:65px;}
 	nav{width:95%;margin:0 auto;}
 	nav ul{margin:5px 0;}
