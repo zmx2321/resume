@@ -28,20 +28,6 @@ console.log('This would be the main JS file.');
 				$(".opus_box").append(opus_box);
 				$(".contact_box").append(contact_box);
 			});
-			/*$(this).find('li:not(.introduce)').bind(options.eventType1,function(){
-			    console.log($(this).find('li:not(.introduce)'));
-			});
-			$(this).find('li.introduce').bind(options.eventType1,function(){
-			    console.log($(this).find('li.introduce'));
-			});*/
-			/*$(this).find('li.pson_info_tit').bind(options.eventType1,function(){
-			    $('.pson_info_box').addClass('introduce');
-			    $('.introduce_box').removeClass('introduce');
-			});
-			$(this).find('li.induc_onf_tit').bind(options.eventType1,function(){
-			    $('.introduce_box').addClass('introduce');
-			    $('.pson_info_box').removeClass('introduce');
-			});*/
         });
     }
 })(jQuery);
