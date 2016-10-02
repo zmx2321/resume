@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>web前端工程师简历</title>
+
+</head>
+<body>
+<div class="all">
+	<!-- header s -->
+	<div class="header">
+		<header>
+			<!-- <h1>个人简历</h1> -->
+			<h1>
+				<dl>
+					<dd>
+						<img src="images/zp.jpg">
+					</dd>
+					<dd>
+						<ul>
+							<li>F2E</li>
+							<li>个人简历</li>
+						</ul>
+					</dd>
+				</dl>
+			</h1>
+		</header>
+	</div>
+	<!-- header e -->
+
+	<div class="container">
+		<!-- aside s -->
+		<div class="aside">
+			<nav>
+				<ul>
+					<li id="main_index" class="nav_on"><a href="javascript:;">首页</a></li>
+					<li id="pson_info"><a href="javascript:;">关于我</a></li>
+					<li id="job_skill"><a href="javascript:;">专业技能</a></li>
+					<li id="experience"><a href="javascript:;">我的经历</a></li>
+					<li id="opus"><a href="javascript:;">我的作品</a></li>
+					<li id="contact"><a href="javascript:;">联系我</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- aside e -->
+
+		<!-- article s -->
+		<div class="article">
+			<article>
+				<!-- main_index_box s -->
+				<section class="main_index_box">
+					<p class="aaa">ghkj</p>
+				</section>
+				<!-- main_index_box e -->
+
+				<!-- pson_info_box s -->
+				<section class="pson_info_box">关于我</section>
+				<!-- pson_info_box e -->
+
+				<!-- job_skill_box s -->
+				<section class="job_skill_box">专业技能</section>
+				<!-- job_skill_box e -->
+
+				<!-- experience_box s -->
+				<section class="experience_box">我的经历</section>
+				<!-- experience_box e -->
+
+				<!-- opus_box s -->
+				<section class="opus_box">设计中http://www.flqin.com/#page6</section>
+				<!-- opus_box e -->
+
+				<!-- contact_box s -->
+				<section class="contact_box">联系我</section>
+				<!-- contact_box e -->
+			</article>
+		</div>
+		<!-- article e -->
+		<div class="clear"></div>
+	</div>
+
+	<!-- footer s -->
+	<div class="footer"></div>
+	<!-- footer e -->
+
+	<!-- js s -->
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		if (navigator.userAgent.match(/IEMobile|BlackBerry|Android|iPod|iPhone|iPad/i)) {
+            window.location.href="mobile";      
+		}
+	</script>
+	<!-- js e -->
+</div>
+
+<!-- js s -->
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+//改变文本提示
+$(function(){
+	$("header dd ul").hover(
+		function(){
+			$("header dd ul li:first-child").html("Resume");
+			$("header dd ul li:last-child").html("前端工程师");
+		},
+		function(){
+			$("header dd ul li:first-child").html("F2E");
+			$("header dd ul li:last-child").html("个人简历");
+		}
+	);
+});
+
+//判断设备
+$(document).ready(function(){
+	if (navigator.userAgent.match(/IEMobile|BlackBerry|Android|iPod|iPhone|iPad/i)) {
+	    window.location.href="../";      
+	}
+});
+</script>
+<!-- js e -->
+</body>
+</html>
