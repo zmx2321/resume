@@ -1,0 +1,289 @@
+/*==== layout css s ====*/
+@font-face {
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/pacifico.woff") format('woff');
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { 
+	margin:0; padding:0; 
+}
+
+html, body {
+	margin: 0; 
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/
+}
+
+::selection {
+	background-color: #35405f;
+	color: #fff;
+}
+
+*, *:active, *:focus, *:hover {
+	outline: none;
+}
+
+h1, h2, h3, h4, h5,h6 {
+	margin-top: 0;
+}
+
+body {
+	font: 15px/23px "Lucida Sans","Liberation Sans","Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	background: url(../images/bg-body.jpg);
+	font-size: 1.2rem;/*1.2 × 10px = 12x */
+}
+
+.btn {
+	transition: 0.4s background linear;
+}
+
+.btn:focus
+{
+	color: #fff;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+a{
+	color: #333;
+	text-decoration: none;
+}
+
+.clear{
+	clear: both;
+}
+
+@font-face
+{
+font-family: titop;
+src: url('../fonts/fontawesome-webfont.ttf')
+}
+/*==== layout css e ====*/
+
+/* all s */
+.all{
+	width: 100%;
+}
+
+/*======= header s =======*/
+.header{
+	width: 100%;
+	height: 50px;
+	position:absolute;
+	top:0;
+	overflow: hidden;
+}
+
+header{
+	width: 95%;
+	margin: 0 auto;
+}
+
+header h1{
+	font-family:titop;
+}
+
+header h1 dl > dd{
+	display: inline-block;
+}
+
+header h1 dl > dd:first-child{
+	width: 60px;
+	height: 60px;
+	background: #f00;
+	border-radius: 60px;
+    float: left;
+    overflow: hidden;
+}
+
+header h1 dl > dd:last-child{
+
+}
+/*======= header e =======*/
+
+/*======= container s =======*/
+.container{
+    width: 100%;
+    margin: 50px auto 0;
+    min-height: 500px;
+    -moz-box-shadow: 3px 3px 4px 0px #a3a3a3;
+    -webkit-box-shadow: 3px 3px 4px 0px #a3a3a3;
+    box-shadow: 3px 3px 4px 0px #a3a3a3;
+    border-top: 1px solid #9a9a9a;
+    position: relative;
+}
+
+/*==== aside s ====*/
+.aside{
+    width: 20%;
+    background: url(../images/bg-sidebar.jpg);
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+nav ul{
+    margin-top: 50px;
+}
+
+nav li{
+    height: 39px;
+    line-height: 39px;
+    transition: 0.2s linear;
+}
+
+nav li:before{
+    content: "·";
+    float: left;
+    margin-left: 12px;
+    font-size: 2.5rem;
+    color: #828282;
+}
+
+nav li:hover{
+	background: url(../images/bg-body.jpg);
+	padding-left: 10px; 
+	transition: 0.3s linear;
+}
+
+.nav_on{
+	background: url(../images/bg-body.jpg);
+	padding-left: 10px; 
+}
+
+nav li a{
+	display: block;
+	font-size: 1.4rem;
+	padding-left: 35px;
+}
+/*==== aside e ====*/
+
+/*==== article s ====*/
+.article{
+    width: 80%;
+    min-height: 500px;
+    /* background: #E3E3E3; */
+    float: left;
+}
+
+article{
+    width: 95%;
+    z-index: 0;
+    background: #E3E3E3;
+    margin: 20px auto;
+    min-height: 500px;
+}
+
+article section{
+	display: none;
+	position: relative;
+}
+
+article section:first-child{
+	display: block;
+}
+
+
+/* main_index_box（首页）s */
+.aaa{
+	width:100px;
+	height:100px;
+	position: absolute;
+	background:red;
+	animation:myfirst 3s linear 0s infinite alternate;  
+	-moz-animation:myfirst 3s linear 0s infinite alternate; /* Firefox */
+	-webkit-animation:myfirst 3s linear 0s infinite alternate; /* Safari and Chrome */
+	-o-animation:myfirst 3s linear 0s infinite alternate; /* Opera */
+}
+
+@keyframes myfirst
+{
+	0%{left:0;top:0;}
+	25%{left:100px;top:0;}
+	50%{left:100px;top:100px;}
+	75%{left:0;top:100px;}
+	100%{left:0;top:0;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	0%{left:0;top:0;}
+	25%{left:100px;top:0;}
+	50%{left:100px;top:100px;}
+	75%{left:0;top:100px;}
+	100%{left:0;top:0;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	0%{left:0;top:0;}
+	25%{left:100px;top:0;}
+	50%{left:100px;top:100px;}
+	75%{left:0;top:100px;}
+	100%{left:0;top:0;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+	0%{left:0;top:0;}
+	25%{left:100px;top:0;}
+	50%{left:100px;top:100px;}
+	75%{left:0;top:100px;}
+	100%{left:0;top:0;}
+}
+/* main_index_box（首页）e */
+
+/* introduce_pson（个人信息）s */
+
+/* introduce_pson（个人信息）e */
+
+/* introduce_induc（自我介绍）s */
+
+/* introduce_induc（自我介绍）e */
+/*==== article e ====*/
+/*======= container s =======*/
+
+/*======= footer s =======/
+/*======= footer e =======*/
+/* all e */
+/*==== media screen s ====*/
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media only screen and (max-width:640px) {
+	.container{width:100%;min-height:350px;margin-top:65px;}
+	.article{width:100%;min-height:350px;}
+	article{min-height:350px;}
+	.aside{width:100%;min-height:90px;position:initial;float:right;}
+	.header{ height:65px;}
+	header{height:65px;line-height:65px;}
+	nav{width:95%;margin:0 auto;}
+	nav ul{margin:5px 0;}
+	nav li{display:inline-block;width:24%;text-align:center;}
+	nav li:hover{background:initial;padding-left:initial;}
+	nav li a{padding-left:initial;}
+	.nav_on{background:initial !important;padding:0 !important;}
+	nav li:before{content:""}
+}
+/***==== media screen s ====*/
