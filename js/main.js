@@ -43,4 +43,11 @@ $(function(){
 		    window.location.href="mobile";      
 		}
 	});
+	
+//console
+	console.log(
+				"%c%s",
+            	"color: red; font-size: 13px;",
+            	"学习是一个充实愉悦的过程\n前端更贴近用户，这种体验非常美妙\n热爱FE.D，也热爱一切美好的事物\n行路有良友，便是捷径\n带上我吧，一起看到更大的世界"
+            	);
 });
