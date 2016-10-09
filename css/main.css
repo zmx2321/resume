@@ -1,0 +1,4 @@
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+.section2 p { position: relative; left: -120%;}
+.section3 p { position: relative; bottom: -120%;}
+.section4 p { display: none;}
