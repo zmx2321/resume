@@ -3,45 +3,82 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-<title>132</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-<script type="text/javascript">
-
-</script>
+<title>web前端工程师简历</title>
+<link rel="stylesheet" href="css/lib/jquery.fullPage.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" /> -->
+<style>
+	.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+	.section2 p { position: relative; left: -120%;}
+	.section3 p { position: relative; bottom: -120%;}
+	.section4 p { display: none;}
+</style>
 </head>
 <body>
-<div class="all">
-	        <div id="viewport" class="viewport">
-            <div class="pageview" style="background: #3b76c0">
-                <h3>页面-1</h3>
-            </div>
-            <div class="pageview" style="background: #58c03b;">
-                <h3>页面-2</h3>
-            </div>
-            <div class="pageview" style="background: #c03b25;">
-                <h3>页面-3</h3>
-            </div>
-            <div class="pageview" style="background: #e0a718;">
-                <h3>页面-4</h3>
-            </div>
-            <div class="pageview" style="background: #c03eac;">
-                <h3>页面-5</h3>
-            </div>
-        </div>
-        <div class="pagenumber">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+<!-- body s -->
+<div id="dowebok">
+    <div class="section section1">
+        <h3>第一屏</h3>
+        <p>fullPage.js — 回调函数演示</p>
+    </div>
+    <div class="section section2">
+        <h3>第二屏</h3>
+        <p>滚动到第二屏后的回调函数执行的效果</p>
+    </div>
+    <div class="section section3">
+        <h3>第三屏</h3>
+        <p>滚动到第三屏后的回调函数执行的效果</p>
+    </div>
+    <div class="section section4">
+        <h3>第四屏</h3>
+        <p>滚动到第四屏后的回调函数执行的效果</p>
+    </div>
 </div>
+<!-- body e -->
 
 <!-- js s -->
 <script src="../js/lib/jquery-1.8.3.min.js"></script>
+<script src="../js/lib/jquery.fullPage.min.js"></script>
+<script src="../js/lib/jquery.easing.min.js"></script>
 <script src="js/main.js"></script>
 <script>
+$(function(){
+//全屏滑动插件
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		afterLoad: function(anchorLink, index){
+			if(index == 2){
+				$('.section2').find('p').delay(500).animate({
+					left: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 3){
+				$('.section3').find('p').delay(500).animate({
+					bottom: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 4){
+				$('.section4').find('p').fadeIn(2000);
+			}
+		},
+		onLeave: function(index, direction){
+			if(index == '2'){
+				$('.section2').find('p').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '3'){
+				$('.section3').find('p').delay(500).animate({
+					bottom: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '4'){
+				$('.section4').find('p').fadeOut(2000);
+			}
+		}
+	});
+});
+
 //判断设备
 $(document).ready(function(){
 	if (!navigator.userAgent.match(/IEMobile|BlackBerry|Android|iPod|iPhone|iPad/i)) {

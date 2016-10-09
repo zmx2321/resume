@@ -1,3 +1,4 @@
+//全屏翻页
 (function(window,document){
     var currentPosition = 0; //记录当前页面位置
     var currentPoint = -1;   //记录当前点的位置
@@ -120,3 +121,12 @@
        }
     }
 })(window,document);
+
+$(function(){
+  //判断设备
+  $(document).ready(function(){
+      if (!navigator.userAgent.match(/IEMobile|BlackBerry|Android|iPod|iPhone|iPad/i)) {
+          window.location.href="../";  
+      }
+  });
+});
