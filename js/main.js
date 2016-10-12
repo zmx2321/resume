@@ -1,10 +1,9 @@
 $(function(){
-//section1
-/*$('.section1').find('p').append("<a>123</a>");*/
-$('.section1').find('p').delay(500).animate({
-					left: '0'
-			}, 1500, 'easeOutExpo');
 //全屏滑动插件
+//section1
+	$('.section1').find('p').delay(500).animate({
+			left: '0'
+	}, 1500, 'easeOutExpo');
 	$('#dowebok').fullpage({
 		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#7BAABE','#1bbc9b'],
 		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
