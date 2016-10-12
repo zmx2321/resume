@@ -1,9 +1,4 @@
 $(function(){
-//section1
-/*$('.section1').find('p').append("<a>123</a>");*/
-$('.section1').find('p').delay(500).animate({
-					left: '0'
-			}, 1500, 'easeOutExpo');
 //全屏滑动插件
 	$('#dowebok').fullpage({
 		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#7BAABE','#1bbc9b'],
@@ -11,11 +6,6 @@ $('.section1').find('p').delay(500).animate({
 		menu: '#menu',
 		'navigation': true,
 		afterLoad: function(anchorLink, index){
-			if(index == 1){
-				$('.section1').find('p').delay(500).animate({
-					left: '0'
-				}, 1500, 'easeOutExpo');
-			}
 			if(index == 2){
 				$('.section2').find('p').delay(500).animate({
 					left: '0'
@@ -29,23 +19,8 @@ $('.section1').find('p').delay(500).animate({
 			if(index == 4){
 				$('.section4').find('p').fadeIn(2000);
 			}
-			if(index == 5){
-				$('.section5').find('p').delay(500).animate({
-					bottom: '0'
-				}, 1500, 'easeOutExpo');
-			}
-			if(index == '6'){
-				$('.section6').find('p').delay(500).animate({
-					left: '0'
-				}, 1500, 'easeOutExpo');
-			}
 		},
 		onLeave: function(index, direction){
-			if(index == 1){
-				$('.section1').find('p').delay(500).animate({
-					left: '-120%'
-				}, 1500, 'easeOutExpo');
-			}
 			if(index == '2'){
 				$('.section2').find('p').delay(500).animate({
 					left: '-120%'
@@ -58,16 +33,6 @@ $('.section1').find('p').delay(500).animate({
 			}
 			if(index == '4'){
 				$('.section4').find('p').fadeOut(2000);
-			}
-			if(index == '5'){
-				$('.section5').find('p').delay(500).animate({
-					bottom: '-120%'
-				}, 1500, 'easeOutExpo');
-			}
-			if(index == '6'){
-				$('.section6').find('p').delay(500).animate({
-					left: '-120%'
-				}, 1500, 'easeOutExpo');
 			}
 		}
 	});
