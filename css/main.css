@@ -1,11 +1,3 @@
-.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
-.section1 p { position: relative; left: -120%;}
-.section2 p { position: relative; left: -120%;}
-.section3 p { position: relative; bottom: -120%;}
-.section4 p { display: none;}
-.section5 p { position: relative; bottom: -120%;}
-.section6 p { position: relative; left: -120%;}
-
 /* header s */
 .header{
 	position: fixed;
@@ -23,3 +15,33 @@
 	transition: 1s linear;
 }
 /* header e */
+
+/* #dowebok s */
+/* #dowebok public s */
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+/* #dowebok public e */
+
+/* #dowebok section1 s */
+.section1 p { position: relative; left: -120%;}
+/* #dowebok section1 e */
+
+/* #dowebok section2 s */
+.section2 p { position: relative; left: -120%;}
+/* #dowebok section2 e */
+
+/* #dowebok section3 s */
+.section3 p { position: relative; bottom: -120%;}
+/* #dowebok section3 e */
+
+/* #dowebok section4 s */
+.section4 p { display: none;}
+/* #dowebok section4 e */
+
+/* #dowebok section5 s */
+.section5 p { position: relative; bottom: -120%;}
+/* #dowebok section5 e */
+
+/* #dowebok section6 s */
+.section6 p { position: relative; left: -120%;}
+/* #dowebok section6 e */
+/* #dowebok e */
