@@ -25,7 +25,7 @@ $(function(){
 				/*$('.section3').find('.skill_wrap').delay(50).animate({
 					left: '50%'
 				}, 800, 'easeOutExpo');*/
-				$('.section3').find('.skill_wrap').fadeIn(2000);
+				$('.section3').find('.skill_wrap').fadeIn(1500);
 			}
 			if(index == 4){
 				$('.section4').find('p').fadeIn(2000);
@@ -54,7 +54,7 @@ $(function(){
 				/*$('.section3').find('.skill_wrap').delay(0).animate({
 					left: '-120%'
 				}, 1500, 'easeOutExpo');*/
-				$('.section3').find('.skill_wrap').fadeOut(2000);
+				$('.section3').find('.skill_wrap').fadeOut(1500);
 			}
 			if(index == '4'){
 				$('.section4').find('p').fadeOut(2000);
