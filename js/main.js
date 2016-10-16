@@ -5,7 +5,7 @@ $(function(){
 	}, 1500, 'easeOutExpo');*/
 //全屏滑动插件
 	$('#dowebok').fullpage({
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#7BAABE','#1bbc9b'],
+		/*sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#7BAABE','#1bbc9b'],*/
 		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
 		navigationTooltips:['首页','关于我','专业技能','我的经历','我的作品','联系我'],
 		navigationColor:'#f00',

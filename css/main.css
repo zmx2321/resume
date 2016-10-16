@@ -3,7 +3,7 @@
     position: fixed;
     height: 65px;
     top: 0;
-    background: #c7c5c5;
+    background: #dad8d8;
     width: 100%;
     z-index: 1;
     transition: 0.5s linear;
@@ -87,7 +87,7 @@ nav li a:hover{
 /* #dowebok public s */
 .section {
 	text-align: center; 
-	font: 50px "Microsoft Yahei"; color: #fff;
+	color: #333;
 	background: url(../images/bg.jpg) no-repeat center top;
 	background-size: 100%;
 }
@@ -116,7 +116,55 @@ nav li a:hover{
 /* #dowebok public e */
 
 /* #dowebok section1 s */
-.section1 p { position: relative; left: -120%;}
+/* .section1 p { position: relative; left: -120%;} */
+.section1{
+	background-size: 100% 100%;
+	-webkit-animation: changebg 2s ease-in-out;
+	position: relative;
+}
+
+@-webkit-keyframes changebg{
+	0%{
+		background-size: 130% 130%;	
+	}
+	100%{
+		background-size: 100% 100%;
+	}
+}
+
+.section1_txt dl dt{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	bottom: 270px;
+	width: 65%;
+	border-bottom: solid 1px #ccc;
+	animation: secFirDt 3s ease;
+}
+
+@-webkit-keyframes secFirDt{
+	0%{
+		bottom: 0;
+		opacity: 0;
+	}
+	
+	50%{
+		opacity: .8;
+	}
+
+	100%{
+		bottom: 270px;
+		opacity: 1;
+	}
+}
+
+.section1_txt dl dt span{
+    padding-bottom: 10px;
+    display: block;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
 /* #dowebok section1 e */
 
 /* #dowebok section2 s */
