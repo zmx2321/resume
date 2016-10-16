@@ -24,9 +24,9 @@ $(function(){
 				}, 1500, 'easeOutExpo');
 			}
 			if(index == 3){
-				$('.section3').find('p').delay(500).animate({
-					bottom: '0'
-				}, 1500, 'easeOutExpo');
+				$('.section3').find('.skill_wrap').delay(50).animate({
+					left: '50%'
+				}, 800, 'easeOutExpo');
 			}
 			if(index == 4){
 				$('.section4').find('p').fadeIn(2000);
@@ -93,6 +93,7 @@ $(".header_left li:last").hover(
 	}
 );
 
+//头像
 $(".header").hover(
 	function(){
 		$(".header_left li:first-child").css({
@@ -106,18 +107,29 @@ $(".header").hover(
 	}
 );
 
+//专业技能选项卡
+$(".skill_wrap ul > li:first-child dd").click(function(){
+	$(this).siblings().find("ol").find("li:first").removeClass("skill_on");
+	$(this).find("ol").find("li:first").addClass("skill_on");
+	$(".skill_wrap ul > li:last-child div").hide();
+	id=$(this).attr('id');
+	$("."+id+"_box").show();
+
+});
+
 //console
-	console.log(
+	/*console.log(
 				"%c%s",
             	"color: red; font-size: 13px;",
             	"学习是一个充实愉悦的过程\n前端更贴近用户，这种体验非常美妙\n热爱FE.D，也热爱一切美好的事物\n行路有良友，便是捷径\n带上我吧，一起看到更大的世界"
-            	);
-	console.log(" %c 我的Github(https://github.com/webcodder)","color: red");   
+            	);*/
+	/*console.log(" %c 我的Github(https://github.com/webcodder)","color: red");   */
 	/*http://blog.csdn.net/u013682842/*/
-	console.log("%d年%d月%d日",2016,10,16);
+	/*console.log("%d年%d月%d日",2016,10,16);*/
 	/*console.time("控制台计时器");
 	for(var i=0;i<1000;i++){
 		for(var j=0;j<1000;j++){}
 	}
 	console.timeEnd("控制台计时器");*/
+	console.log(" %c 合贸通(https://webcodder.github.io/provisional/hmt/html)","color: red");
 });

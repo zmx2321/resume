@@ -272,7 +272,148 @@ nav li a:hover{
 /* #dowebok section2 e */
 
 /* #dowebok section3 s */
-.section3 p { position: relative; bottom: -120%;}
+/* .section3 p { position: relative; bottom: -120%;} */
+.skill_wrap{
+	position: absolute;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+    background: url(../images/bg-body.jpg) top repeat;
+    padding: 33px 0 25px 0;
+    transition: 0.8s ease;
+    opacity: 0.8;
+    box-shadow: 0px 2px 10px 3px #a2a1a1;
+    left: -50%;
+}
+
+.skill_wrap:hover{
+	box-shadow: 0px 2px 20px 3px #a2a1a1;
+	transition: 0.3s linear;
+}
+
+.skill_wrap > ul > li:first-child{
+	overflow: hidden;
+	float: left;
+}
+
+.skill_wrap ul > li:first-child dl > dd{
+    display: inline-block;
+    width: 40px;
+    min-height: 200px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.skill_wrap ul > li:first-child dl > dd:first-child{
+	margin-left: 100px;
+}
+
+.skill_wrap ul > li:first-child dl > dd ol li:first-child{
+	width: 95%;
+    height: 180px;
+    opacity: 0.6;
+    transition: 0.2s linear;
+    overflow: hidden;
+    position: relative;
+    border: solid 1px #9e8f8f;
+    border-radius: 26px 10px 20px 20px;
+}
+
+.skill_wrap ul > li:first-child dl > dd ol li:first-child:hover{
+	transition: 0.3s linear;
+	opacity: 1;
+}
+
+.skill_on{
+	opacity: 1 !important;
+}
+
+.skill_wrap > ul > li:first-child dl > dd ol li:last-child{
+	margin-top: 10px;
+}
+
+.skill_wrap > ul > li:last-child{
+	width: 420px;
+	height: 200px;
+	overflow: hidden;
+	background: url(../images/bg-sidebar.jpg) top repeat;
+	float: right;
+	margin-right: 100px;
+	text-align: initial;
+}
+
+.skill_wrap > ul > li:last-child div{
+	display: none;
+	width: 100%;
+}
+
+.skill_wrap > ul > li:last-child div:first-child{
+	display: block;
+}
+
+.skill_wrap > ul > li:last-child div ul{
+	width: 75%;
+	margin: 30px auto 0;
+}
+
+.skill_wrap > ul > li:last-child div ul > li{
+	list-style: initial;
+	margin-bottom: 10px;
+}
+
+.bar {
+	position:absolute;
+	width: 100%;
+	display:block;
+	height:100%;
+	bottom: 0;
+	background:-webkit-linear-gradient(top,#efefef 0%,#ccc 100%);
+	border-radius: 28px 8px 20px 20px;
+	overflow:hidden;
+}
+
+.bar span {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:100%;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	top:0;
+	left:0;
+	background:url(../images/skill_bar.png) 0 0;
+	-webkit-animation:sparkle 1500ms linear infinite;
+    -moz-animation:sparkle 1500ms linear infinite;
+    -o-animation:sparkle 1500ms linear infinite;
+    animation:sparkle 1500ms linear infinite;
+	opacity:0.2;
+}
+
+@-webkit-keyframes sparkle {
+	from {background-position:0 0;}
+	to {background-position:0 -64px;}
+}
+
+#skill_css3 .bar{
+	height: 80%;
+}
+
+#skill_h5 .bar{
+	height: 65%;
+}
+
+#skill_js .bar{
+	height: 50%;
+}
+
+#skill_jq .bar{
+	height: 70%;
+}
+
+#skill_ps .bar{
+	height: 80%;
+}
 /* #dowebok section3 e */
 
 /* #dowebok section4 s */
