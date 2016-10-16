@@ -7,7 +7,8 @@
     width: 100%;
     z-index: 1;
     transition: 0.5s linear;
-    opacity: 0.6;
+    opacity: 0.8;
+    padding-bottom: 5px;
 }
 
 .header:hover{
@@ -15,16 +16,70 @@
 	transition: 1s linear;
 }
 
-.header_pic{
+.header_left{
+	float: left;
+	margin-left: 30px;
+}
+
+.header_left li{
+	display: inline-block;
+}
+
+.header_left li:first-child{
+	width: 65px;
+	height: 65px;
+	overflow: hidden;
+	border-radius: 32px;
+	margin-top: 2px;
+	transition: 0.2s linear;
 	float: left;
 }
 
+.header_left li:first-child:hover{
+	transition: 0.3s linear;
+}
+
+.header_left li:first-child img{
+	width: 100%;
+	height: 100%;
+}
+
+.header_left li:last-child{
+    float: left;
+    margin: -2px 0 0 15px;
+}
+
+.header_left li:last-child dd{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    padding: 8px;
+}
+
+.header_left li:last-child dd:first-child{
+	border-bottom: solid 1px #333;
+}
+
 .nav{
-	float: right;
+    float: right;
+    margin: 25px 45px 0 0;
 }
 
 nav li{
 	display: inline-block;
+}
+
+nav li a{
+    margin: 0 12px;
+    transition: 0.2s linear;
+    padding-bottom: 26px;
+    font-size: 1.3rem;
+}
+
+nav li a:hover{
+	color: #35290d;
+	transition: 0.3s linear;
+	border-bottom: solid 1px #1FAEFF;
 }
 /* header e */
 

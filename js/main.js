@@ -1,8 +1,8 @@
 $(function(){
 //section1
-	$('.section1').find('p').delay(500).animate({
+	/*$('.section1').find('p').delay(500).animate({
 			left: '0'
-	}, 1500, 'easeOutExpo');
+	}, 1500, 'easeOutExpo');*/
 //全屏滑动插件
 	$('#dowebok').fullpage({
 		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#7BAABE','#1bbc9b'],
@@ -81,6 +81,31 @@ $(function(){
 		}
 	});
 	
+//改变文字
+$(".header_left li:last").hover(
+	function(){
+		$(this).find("dd:first").html("Resume");
+		$(this).find("dd:last").html("前端工程师");
+	},
+	function(){
+		$(this).find("dd:first").html("F2E");
+		$(this).find("dd:last").html("个人简历");
+	}
+);
+
+$(".header").hover(
+	function(){
+		$(".header_left li:first-child").css({
+			boxShadow:"0 0 15px #1FAEFF"
+		});
+	},
+	function(){
+		$(".header_left li:first-child").css({
+			boxShadow:"initial"
+		});
+	}
+);
+
 //console
 	console.log(
 				"%c%s",
