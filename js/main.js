@@ -19,14 +19,13 @@ $(function(){
 				}, 1500, 'easeOutExpo');
 			}
 			if(index == 2){
-				$('.section2').find('p').delay(500).animate({
-					left: '0'
-				}, 1500, 'easeOutExpo');
+				$('.section2').find('p').fadeIn(2000);
 			}
 			if(index == 3){
-				$('.section3').find('.skill_wrap').delay(50).animate({
+				/*$('.section3').find('.skill_wrap').delay(50).animate({
 					left: '50%'
-				}, 800, 'easeOutExpo');
+				}, 800, 'easeOutExpo');*/
+				$('.section3').find('.skill_wrap').fadeIn(2000);
 			}
 			if(index == 4){
 				$('.section4').find('p').fadeIn(2000);
@@ -49,14 +48,13 @@ $(function(){
 				}, 1500, 'easeOutExpo');
 			}
 			if(index == '2'){
-				$('.section2').find('p').delay(500).animate({
-					left: '-120%'
-				}, 1500, 'easeOutExpo');
+				$('.section2').find('p').fadeOut(2000);
 			}
 			if(index == '3'){
-				$('.section3').find('.skill_wrap').delay(0).animate({
+				/*$('.section3').find('.skill_wrap').delay(0).animate({
 					left: '-120%'
-				}, 1500, 'easeOutExpo');
+				}, 1500, 'easeOutExpo');*/
+				$('.section3').find('.skill_wrap').fadeOut(2000);
 			}
 			if(index == '4'){
 				$('.section4').find('p').fadeOut(2000);
