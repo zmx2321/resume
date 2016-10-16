@@ -54,8 +54,8 @@ $(function(){
 				}, 1500, 'easeOutExpo');
 			}
 			if(index == '3'){
-				$('.section3').find('p').delay(500).animate({
-					bottom: '-120%'
+				$('.section3').find('.skill_wrap').delay(0).animate({
+					left: '-120%'
 				}, 1500, 'easeOutExpo');
 			}
 			if(index == '4'){
