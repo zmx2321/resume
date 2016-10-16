@@ -119,8 +119,8 @@ nav li a:hover{
 /* .section1 p { position: relative; left: -120%;} */
 .section1{
 	background-size: 100% 100%;
-	-webkit-animation: changebg 2s ease-in-out;
 	position: relative;
+	-webkit-animation: changebg 2s ease-in-out;
 }
 
 @-webkit-keyframes changebg{
@@ -139,7 +139,7 @@ nav li a:hover{
 	text-align: center;
 	bottom: 270px;
 	width: 65%;
-	border-bottom: solid 1px #ccc;
+	border-bottom: solid 2px #ccc;
 	animation: secFirDt 3s ease;
 }
 
@@ -164,6 +164,98 @@ nav li a:hover{
     display: block;
     font-size: 1.8rem;
     letter-spacing: 2px;
+}
+
+.section1_txt dl dd{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+    font-size: 1.3rem;
+}
+
+.section1_txt dl dd:nth-child(2){
+	bottom: 230px;
+	-webkit-animation: secFirDdFir 3s ease;
+	
+}
+
+@-webkit-keyframes secFirDdFir{
+	0%{
+		bottom: 0;
+		opacity: 0;
+	}
+	
+	50%{
+		opacity: .8;
+	}
+
+	100%{
+		bottom: 230px;
+		opacity: 1;
+	}
+}
+
+.section1_txt dl dd:nth-child(3){
+	bottom: 200px;
+	-webkit-animation: secFirDdSec 3s ease;
+}
+
+@-webkit-keyframes secFirDdSec{
+	0%{
+		bottom: 0;
+		opacity: 0;
+	}
+	
+	50%{
+		opacity: .8;
+	}
+
+	100%{
+		bottom: 200px;
+		opacity: 1;
+	}
+}
+
+.section1_txt dl dd:nth-child(4){
+	bottom: 170px;
+	-webkit-animation: secFirDdFor 3s ease;
+}
+
+@-webkit-keyframes secFirDdFor{
+	0%{
+		bottom: 0;
+		opacity: 0;
+	}
+	
+	50%{
+		opacity: .8;
+	}
+
+	100%{
+		bottom: 170px;
+		opacity: 1;
+	}
+}
+
+.section1_txt dl dd:nth-child(5){
+	bottom: 140px;
+	-webkit-animation: secFirDdFiv 3s ease;
+}
+
+@-webkit-keyframes secFirDdFiv{
+	0%{
+		bottom: 0;
+		opacity: 0;
+	}
+	
+	50%{
+		opacity: .8;
+	}
+
+	100%{
+		bottom: 140px;
+		opacity: 1;
+	}
 }
 /* #dowebok section1 e */
 
