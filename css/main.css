@@ -142,13 +142,13 @@ nav li a:hover{
 
 .picture{
     position: absolute;
-    bottom: 330px;
-    width: 120px;
-    height: 120px;
+    bottom: 335px;
+    width: 130px;
+    height: 130px;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
-    border-radius: 60px;
+    border-radius: 65px;
     cursor: pointer;
     transition: 0.5s linear;
     opacity: 1;
