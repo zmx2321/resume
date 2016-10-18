@@ -413,7 +413,7 @@ nav li a:hover{
 	display:block;
 	height:100%;
 	bottom: 0;
-	background:-webkit-linear-gradient(top,#efefef 0%,#ccc 100%);
+	background: -webkit-linear-gradient(top,#c9cac9 0%,#1fd6ff 100%);
     border-radius: 50px 15px 20px 20px;
 	overflow:hidden;
 }
