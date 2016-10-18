@@ -317,7 +317,6 @@ nav li a:hover{
     top: 35%;
     background: url(../images/bg-body.jpg) top repeat;
     padding: 33px 0 25px 0;
-    /* transition: 0.8s ease; */
     opacity: 0.8;
     box-shadow: 0px 2px 10px 3px #a2a1a1;
     /* left: -50%; */
@@ -327,6 +326,7 @@ nav li a:hover{
 .skill_wrap:hover{
 	box-shadow: 0px 2px 20px 3px #a2a1a1;
 	transition: 0.3s linear;
+	opacity: 1;
 }
 
 .skill_wrap > ul{
@@ -356,7 +356,7 @@ nav li a:hover{
 .skill_wrap ul > li:first-child dl > dd ol li:first-child{
     width: 50%;
     height: 180px;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: 0.2s linear;
     overflow: hidden;
     position: relative;
