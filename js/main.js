@@ -116,18 +116,11 @@ $(".skill_wrap ul > li:first-child dd").click(function(){
 });
 
 //console
-	/*console.log(
+	console.log(
 				"%c%s",
-            	"color: red; font-size: 13px;",
-            	"学习是一个充实愉悦的过程\n前端更贴近用户，这种体验非常美妙\n热爱FE.D，也热爱一切美好的事物\n行路有良友，便是捷径\n带上我吧，一起看到更大的世界"
-            	);*/
-	/*console.log(" %c 我的Github(https://github.com/webcodder)","color: red");   */
-	/*http://blog.csdn.net/u013682842/*/
-	/*console.log("%d年%d月%d日",2016,10,16);*/
-	/*console.time("控制台计时器");
-	for(var i=0;i<1000;i++){
-		for(var j=0;j<1000;j++){}
-	}
-	console.timeEnd("控制台计时器");*/
+            	"color: #36AFAB; font-size: 13px;",
+            	"学习是一个充实愉悦的过程\n前端更贴近用户，这种体验非常美妙\n热爱前端，也热爱一切美好的事物\n行路有良友，便是捷径\n带上我吧，一起看到更大的世界"
+            	);
 	console.log(" %c 合贸通(https://webcodder.github.io/provisional/hmt/html)","color: red");
+	console.log(" %c Games(http://laycm.xyz/)","color: red");
 });
