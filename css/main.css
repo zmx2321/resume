@@ -459,12 +459,6 @@ nav li a:hover{
 #skill_ps .bar{
 	height: 80%;
 }
-
-.aaa{
-    width: 30%;
-    overflow: hidden;
-    position: relative;
-}
 /* #dowebok section3 e */
 
 /* #dowebok section4 s */
@@ -472,7 +466,21 @@ nav li a:hover{
 /* #dowebok section4 e */
 
 /* #dowebok section5 s */
-.section5 p { position: relative; bottom: -120%;}
+/* .section5 p { position: relative; bottom: -120%;} */
+.aaa{
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fp-controlArrow.fp-prev{
+	border-color: transparent #f00 transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+	border-color: transparent transparent transparent #f00;
+}
 /* #dowebok section5 e */
 
 /* #dowebok section6 s */
