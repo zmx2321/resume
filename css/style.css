@@ -56,4 +56,8 @@ table {
 html {
 	overflow-y: scroll;
 } 
+
+.clear{
+	clear: both;
+}
 /* css common */
