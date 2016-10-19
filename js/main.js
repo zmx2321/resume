@@ -112,7 +112,6 @@ $(".skill_wrap ul > li:first-child dd").click(function(){
 	$(".skill_wrap ul > li:last-child div").hide();
 	id=$(this).attr('id');
 	$("."+id+"_box").show();
-
 });
 
 //console
@@ -123,4 +122,5 @@ $(".skill_wrap ul > li:first-child dd").click(function(){
             	);
 	console.log(" %c 合贸通(https://webcodder.github.io/provisional/hmt/html)","color: red");
 	console.log(" %c Games(http://laycm.xyz/)","color: red");
+	console.log(" %c Games(http://v5shopping.com)","color: red");
 });

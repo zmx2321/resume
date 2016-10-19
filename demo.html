@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JQuery实现图片轮播效果 </title>
+<script src="http://img.jb51.net/jslib/jquery/jquery14.js" type="text/javascript"></script>
+<style type="text/css"><!--
+#banner {position:relative; width:478px; height:286px; border:1px solid #666; overflow:hidden; font-size:16px}
+#banner_list img {border:0px;}
+#banner_bg {position:absolute; bottom:0;background-color:#000;height:30px;filter: Alpha(Opacity=30);opacity:0.3;z-index:1000;cursor:pointer; width:478px; }
+#banner_info{position:absolute; bottom:4px; left:5px;height:22px;color:#fff;z-index:1001;cursor:pointer}
+#banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;}
+#banner ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8; z-index:1002;
+margin:0; padding:0; bottom:3px; right:5px; height:20px}
+#banner ul li { padding:0 8px; line-height:18px;float:left;display:block;color:#FFF;border:#e5eaff 1px solid;background-color:#6f4f67;cursor:pointer; margin:0; font-size:16px;}
+#banner_list a{position:absolute;} <! 让四张图片都可以重叠在一起
+--></style>
+</head>
+
+<body>
+
+<p>【实例演示】</p>
+<div id="banner">
+<div id="banner_bg"></div>
+<!--标题背景-->
+<div id="banner_info"></div>
+<!--标题-->
+
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+<div id="banner_list">
+<a href="#" target="_blank"><img src="http://files.jb51.net/demoimg/201008/o_p1.jpg" title="橡树小屋的blog" alt="橡树小屋的blog" /></a>
+<a href="#" target="_blank"><img src="http://files.jb51.net/demoimg/201008/o_p3.jpg" title="橡树小屋的blog" alt="橡树小屋的blog" /></a>
+<a href="#" target="_blank"><img src="http://files.jb51.net/demoimg/201008/o_p4.jpg" title="橡树小屋的blog" alt="橡树小屋的blog" /></a>
+<a href="#" target="_blank"><img src="http://files.jb51.net/demoimg/201008/o_p5.jpg" title="橡树小屋的blog" alt="橡树小屋的blog" /></a>
+</div>
+</div>
+<script type="text/javascript">
+//将当前显示的BANNER图片的索引值设置为0，也就是默认是第一个图片的序号
+var t = n = 0, count;
+$(document).ready(function(){
+    //定义获取四张BANNER图
+    count=$("#banner_list a").length; 
+    //设置默认显示第一张BANNER图，其他的隐藏
+    $("#banner_list a:not(:first-child)").hide(); 、
+    //设置默认标题为第一张图标的alt信息
+    $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+    //点击默认的标题，链接到第一张BANNER图的a链接地址
+    $("#banner_info").click(function(){
+        window.open($("#banner_list a:first-child").attr('href'), "_blank")
+    });
+    //这里为切换数字按钮点击事件
+    $("#banner li").click(function() {
+        //获取Li元素内的值，即1，2，3，4
+        var i = $(this).text() - 1;
+        //将i的值赋值给新变量n（也就是当前显示图片的索引值序号）
+        n = i;
+        //如果被点击的数字按钮的值大于等于BANNER的总数则退出当前语句
+        if (i >= count) return;
+        //设置标题为当前点击按钮对应的BANNER图片的alt信息
+        $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+        //删除标题绑定的事件并重新设置标题点击后 打开点击按钮对应的BANNER图片的a链接
+        $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+        //将所有的BANNER图淡入隐藏 当前点击按钮对应的BANNER图片淡入显示
+        $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+        //将容器#banner的背景设置为空
+        document.getElementById("banner").style.background="";
+        //将当前点击按钮的样式设置为高亮样式on
+        $(this).toggleClass("on");
+        //清除其它点击按钮的高亮样式
+        $(this).siblings().removeAttr("class");
+    });
+     
+    //设置默认的定时器  每4s执行一次showauto函数
+    t = setInterval("showAuto()", 4000);
+    //容器#banner鼠标移入后 清清除定时器 （也就是鼠标移动到BANNER上面停止切换），移开则继续切换
+    $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+})
+ 
+//定义自动切换的函数
+function showAuto()
+{
+    //如果当前切换的图片索引值大于所有图片的数量 
+    //也就是当切换到最后一张图片再继续切换的时候 则将当前图片索引设置为0（第一张）
+    //否则则将当前图片的索引值+1
+    n = n >=(count - 1) ? 0 : ++n;
+    //重新触发当前BANNER的click事件
+    $("#banner li").eq(n).trigger('click');
+}
+</script>
+</body>
+</html>
+
+
+
+
+            <div class="banner_wrap" id="banner">
+                <div class="banner_cont" id="banner_list">
+                    <a href="#" target="_blank"><img src="images/index_banner1.png" title="1234" /></a>
+                    <a href="#" target="_blank"><img src="http://files.jb51.net/demoimg/201008/o_p1.jpg" title="橡树小屋的blog" /></a>
+                    <a href="#" target="_blank"><img src="http://files.jb51.net/demoimg/201008/o_p3.jpg" title="橡树小屋的blog" /></a>
+                </div>
+                <div class="banner_buttom" id="banner_num">
+                    <ul>
+                        <li class="bann_but_on">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                var t = n = 0 , count;
+                $(function(){
+                    count = $("#banner_list a").length;
+                    $("#banner_list a:not(:first-child)").hide();
+
+                    $("#banner_num li").click(function(){
+                        var i = $(this).text() - 1;
+                        n = i;
+                        if( i >= count ) return;
+                        $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+                        $(this).addClass("bann_but_on").siblings().removeClass("bann_but_on");
+                    });
+
+                    t = setInterval("showAuto()", 4000);
+                    $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+                });
+
+                function showAuto(){
+                    n = n >=(count - 1) ? 0 : ++n;
+                    $("#banner_num li").eq(n).trigger('click');
+                }
+            </script>
