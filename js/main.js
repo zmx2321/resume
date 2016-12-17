@@ -120,7 +120,10 @@ $(".skill_wrap ul > li:first-child dd").click(function(){
             	"color: #36AFAB; font-size: 13px;",
             	"学习是一个充实愉悦的过程\n前端更贴近用户，这种体验非常美妙\n热爱前端，也热爱一切美好的事物\n行路有良友，便是捷径\n带上我吧，一起看到更大的世界"
             	);
-	console.log(" %c 合贸通(https://webcodder.github.io/provisional/hmt/html)","color: red");
-	console.log(" %c Games(http://laycm.xyz/)","color: red");
-	console.log(" %c Games(http://v5shopping.com)","color: red");
+	console.log(" %c 合贸通(http://www.hemoto.com)","color: red");
+	console.log(" %c 唯我秀品(http://v5shopping.com)","color: red");
+	console.log(" %c 问我买全球购(http://m.kissmebuy.com)","color: red");
+	console.log(" %c 布姆电竞(http://wx.school.iboom.tv/index.html)","color: red");
+	console.log(" %c vuedemo(https://webcodder.github.io/newDemo/framework/Vue/items/todolist)","color: red");
+	console.log(" %c angulardemo(https://webcodder.github.io/newDemo/framework/Angular/items/invite)","color: red");
 });
