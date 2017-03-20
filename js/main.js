@@ -126,4 +126,5 @@ $(".skill_wrap ul > li:first-child dd").click(function(){
 	console.log(" %c 布姆电竞(http://wx.school.iboom.tv/index.html)","color: red");
 	console.log(" %c vuedemo(https://webcodder.github.io/newDemo/framework/Vue/items/todolist)","color: red");
 	console.log(" %c angulardemo(https://webcodder.github.io/newDemo/framework/Angular/items/invite)","color: red");
+	console.log(" %c 聚乡村(https://webcodder.github.io/newDemo/site/jxc)","color: red");
 });
